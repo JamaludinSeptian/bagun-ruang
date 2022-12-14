@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="box-form">
+        <div class="form">
+            <h1>HITUNG VOLUME TABUNG</h1>
+            <form>
+                <span>Nilai Jejari <span style="padding-left:20px; padding-right: 10px;">:</span></span>
+                <input type="text" id="jejari" size="10" placeholder="Nilai Jejari">
+                <br>
+                <span>Nilai Tinggi <span style="padding-left: 8px; padding-right: 12px;">:</span></span>
+                <input type="text" id="tinggi" size="10" placeholder="Nilai Tinggi">
+                <br>
+                <br>
+                <button type="button" class="btn-primary gap" onclick="hitungTabung()">Hitung Tabung</button>
+                <button type="button" class="btn-primary"><a href="index.html">Kembali Ke Menu Awal</a></button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function hitungTabung(){
+            const jejari = parseInt(document.getElementById("jejari").value);
+            const tinggi = parseInt(document.getElementById("tinggi").value);
+            let hasil = 3.14 * jejari * jejari * tinggi;
+            alert("Nilai hasilnya adalah : " + hasil.toFixed(1));
+        }
+    </script>
+</body>
+</html>

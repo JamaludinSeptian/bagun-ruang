@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prisma Segitiga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="box-form">
+        <div class="form">
+            <h1 style="font-size: 25px;">HITUNG VOLUME PRISMA SEGITIGA</h1>
+            <form>
+                <span style="font-size: 20px;">Nilai Tinggi Alas <span style="padding-left: 18px;">:</span></span>
+                <input type="text" id="tingialas" size="10" placeholder="Nilai Tinggi Alas">
+                <br>
+                <span style="font-size: 20px;">Nilai Panjang Alas <span style="padding-left: 6px;">:</span></span>
+                <input type="text" id="panjangalas" size="10" placeholder="Nilai Panjang Alas">
+                <br>
+                <span style="font-size: 20px;">Nilai Tinggi Prisma<span style="padding-left: 3px; padding-right: 2px;">:</span></span>
+                <input type="text" id="tinggiprisma" size="10" placeholder="Nilai Tinggi Prisma">
+                <br>
+                <br>
+                <button type="button"  class="btn-primary gap" onclick="hitungPrisma()">Hitung Prisma Segitiga</button>
+                <button type="button" class="btn-primary"><a href="index.html">Kembali Ke Menu Awal</a></button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function hitungPrismak(){
+            const tinggialas = parseInt(document.getElementById("tinggialas").value);
+            const panjangalas = parseInt(document.getElementById("panjangalas").value);
+            const tinggiprisma = parseInt(document.getElementById("tinggiprisma").value);
+            let hasil =  0.5 * tinggialas * panjangalas * tinggiprisma;
+            alert("Nilai hasilnya adalah : " + hasil.toFixed(1));
+        }
+    </script>
+</body>
+</html>

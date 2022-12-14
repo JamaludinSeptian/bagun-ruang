@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerucut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="box-form">
+        <div class="form">
+            <h1 style="font-size: 25px;">HITUNG VOLUME KERUCUT</h1>
+            <form>
+                <span style="font-size: 19px;">Nilai Jejari Alas<span style="padding-left: 39px;">:</span></span>
+                <input type="text" id="jejarialas" size="10" placeholder="Nilai Jejari Alas">
+                <br>
+                <span style="font-size: 19px;">Nilai Tinggi Kerucut<span style="padding-left: 3px; padding-right: 2px;">:</span></span>
+                <input type="text" id="tinggikerucut" size="10" placeholder="Nilai Tinggi Kerucut">
+                <br>
+                <br>
+                <button type="button"  class="btn-primary gap" onclick="hitungKerucut()">Hitung Kerucut</button>
+                <button type="button" class="btn-primary"><a href="index.html">Kembali Ke Menu Awal</a></button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function hitungKerucut(){
+            const jejarialas = parseInt(document.getElementById("jejarialas").value);
+            const tinggikerucut = parseInt(document.getElementById("tinggikerucut").value);
+            let hasil =  1/3 * 3.14 * jejarialas * jejarialas * tinggikerucut;
+            alert("Nilai hasilnya adalah : " + hasil.toFixed(1));
+        }
+    </script>
+</body>
+</html>

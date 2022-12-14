@@ -1,0 +1,118 @@
+/* AWAL UNTUK MENGATUR STYLE INDEX */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/image/6020173.jpg);
+    background-size: cover;
+    color: white;
+}
+.parent{
+    margin: 100px 0;
+}
+.title h1{
+    height: 180px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+.content-box{
+    height: 400px;
+    margin-top: 20px;
+    padding: 100px 0;
+}
+.content-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 20px 70px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.box:hover{
+    background-color: white;
+    color: black;
+}
+/* Akhir untuk mengatur style index */
+
+/* Awal mengatur style rumus */
+.box-form{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    border: 3px solid white;
+    width: 500px;
+    height: 390px;
+    border-radius: 25px;
+    padding: 10px 0;
+}
+.form h1{
+    text-align: center;
+}
+.form form{
+    margin: 50px;
+}
+.form span{
+    display: inline-block;
+    margin: 5px 0;
+    font-size: 24px;
+}
+.form input{
+    width: 220px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.btn-primary{
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    transition: 0.5s;
+    border: 3px solid white;
+}
+.btn-primary a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.gap{
+    margin: 10px 0;
+}
+.btn-primary:hover{
+    background-color: white;
+    color: black;
+}
+.btn-primary a:hover{
+    color: black;
+}
+/* Awal mengatur akhir style rumus */

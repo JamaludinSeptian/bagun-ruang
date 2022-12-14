@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="box-form">
+        <div class="form">
+            <h1>HITUNG VOLUME BOLA</h1>
+            <form>
+                <span>Nilai Jejari <span style="padding-left:20px; padding-right: 10px; margin: 40px 0;">:</span></span>
+                <input type="text" id="jejari" size="10" placeholder="Nilai Jejari">
+                <br>
+                <button type="button" class="btn-primary gap" onclick="hitungBola()">Hitung Bola</button>
+                <button type="button" class="btn-primary"><a href="index.html">Kembali Ke Menu Awal</a></button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function hitungBola(){
+            const jejari = parseInt(document.getElementById("jejari").value);
+            let hasil = 3.14 * jejari * jejari * jejari;
+            alert("Nilai hasilnya adalah : " + hasil.toFixed(1));
+        }
+    </script>
+</body>
+</html>

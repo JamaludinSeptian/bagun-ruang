@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balok</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="box-form">
+        <div class="form">
+            <h1>HITUNG VOLUME BALOK</h1>
+            <form>
+                <span>Nilai Panjang <span style="padding-right: 10px;">:</span></span>
+                <input type="text" id="panjang" size="10" placeholder="Nilai Panjang">
+                <br>
+                <span>Nilai Lebar <span style="padding-left: 20px; padding-right: 10px;">:</span></span>
+                <input type="text" id="lebar" size="10" placeholder="Nilai Lebar">
+                <br>
+                <span>Nilai Tinggi <span style="padding-left: 12px; padding-right: 12px;">:</span></span>
+                <input type="text" id="tinggi" size="10" placeholder="Nilai Tinggi">
+                <br>
+                <br>
+                <button type="button" class="btn-primary gap" onclick="hitungBalok()">Hitung Balok</button>
+                <button type="button" class="btn-primary"><a href="index.html">Kembali Ke Menu Awal</a></button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function hitungBalok(){
+            const panjang = parseInt(document.getElementById("panjang").value);
+            const lebar = parseInt(document.getElementById("lebar").value);
+            const tinggi = parseInt(document.getElementById("tinggi").value);
+            let hasil =  panjang * tinggi * lebar;
+            alert("Nilai hasilnya adalah : " + hasil);
+        }
+    </script>
+</body>
+</html>
